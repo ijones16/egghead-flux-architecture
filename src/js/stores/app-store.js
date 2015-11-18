@@ -97,6 +97,9 @@ const AppStore = Object.assign(EventEmitter.prototype, {
           _decreaseItem( action.item );
           break;
     }
+
+      AppStore.emitChange()
+
   })
 });
 
